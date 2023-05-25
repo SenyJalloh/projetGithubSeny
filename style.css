@@ -1,0 +1,7 @@
+#imageBG {
+  background-image: url("bugatti.jpg");
+  height: 50vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: 1px;
+}
