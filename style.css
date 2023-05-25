@@ -1,70 +1,142 @@
-.container {
-    max-width: 960px;
-  }
-  
-  /*
-   * Custom translucent site header
-   */
-  
-  .site-header {
-    background-color: rgba(0, 0, 0, .85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-  }
-  .site-header a {
-    color: #8e8e8e;
-    transition: color .15s ease-in-out;
-  }
-  .site-header a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /*
-   * Dummy devices (replace them with your own or something else entirely!)
-   */
-  
-  .product-device {
+
+::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f81a1a;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: url('image/R.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 1;
+    overflow-x: hidden;
+}
+
+.container-first{
     position: absolute;
-    right: 10%;
-    bottom: -30%;
-    width: 300px;
-    height: 540px;
-    background-color: #333;
-    border-radius: 21px;
-    transform: rotate(30deg);
-  }
-  
-  .product-device::before {
-    position: absolute;
-    top: 10%;
-    right: 10px;
-    bottom: 10%;
-    left: 10px;
-    content: "";
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 5px;
-  }
-  
-  .product-device-2 {
-    top: -25%;
-    right: auto;
-    bottom: 0;
+    top: 30%;
     left: 5%;
-    background-color: #e5e5e5;
-  }
-  
-  
-  /*
-   * Extra utilities
-   */
-  
-  .flex-equal > * {
-    flex: 1;
-  }
-  @media (min-width: 768px) {
-    .flex-md-equal > * {
-      flex: 1;
-    }
-  }
-  
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 110px;
+    color: white;
+    font-family: Abril fatface, sans-serif;
+}
+
+h1 span{
+    position: relative;
+}
+
+.container-btns {
+    position: relative;
+    top: 50px;
+}
+.btns-firs{
+    border: 2px solid rgb(30, 245, 11);
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    color: rgb(30, 236, 11);
+    cursor: pointer;
+}
+.btns-firs:nth-child(1){
+    margin-right: 30px;
+}
+.btns-firs:hover {
+    transition: all 0.3s ease-in-out;
+    background: rgb(9, 240, 20);
+    color: #c40d0d;
+}
+.ligne {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+.l1{
+    width: 250px;
+    height: 3px;
+    background: rgb(238, 14, 14);
+    border-radius: 5px;
+}
+
+.l2{
+    width: 140px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+
+.logo{
+    position: relative;
+    right: 2.9%;
+    top: 4%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.medias{
+    list-style-type: none;
+    position: absolute;
+    right: 3.3%;
+    top: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bullle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.logo-medias{
+    width: 40px;
+    height: 40px;
+}
+
+
+#header{
+    background-color: var(--couleur-principale);
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    align-items: center;
+}
+#header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    
+}
+#header a{
+    text-decoration: none;
+    color: white;
+}
